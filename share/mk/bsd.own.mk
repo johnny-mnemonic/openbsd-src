@@ -1,4 +1,4 @@
-#	$OpenBSD: bsd.own.mk,v 1.208 2021/04/29 19:21:31 drahn Exp $
+#	$OpenBSD: bsd.own.mk,v 1.210 2021/05/02 22:32:31 naddy Exp $
 #	$NetBSD: bsd.own.mk,v 1.24 1996/04/13 02:08:09 thorpej Exp $
 
 # Host-specific overrides
@@ -42,7 +42,7 @@ BUILD_GCC3?=yes
 .else
 BUILD_GCC3?=no
 .endif
-.if !empty(GCC4_ARCH:M${_arch}) || ${MACHINE_ARCH} == "amd64"
+.if !empty(GCC4_ARCH:M${_arch})
 BUILD_GCC4?=yes
 .else
 BUILD_GCC4?=no
