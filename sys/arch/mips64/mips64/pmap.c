@@ -1,4 +1,4 @@
-/*	$OpenBSD: pmap.c,v 1.116 2021/03/11 11:16:59 jsg Exp $	*/
+/*	$OpenBSD: pmap.c,v 1.119 2021/07/24 08:21:13 visa Exp $	*/
 
 /*
  * Copyright (c) 2001-2004 Opsycon AB  (www.opsycon.se / www.opsycon.com)
@@ -256,7 +256,7 @@ pmap_invalidate_icache(pmap_t pmap, vaddr_t va, pt_entry_t entry)
 
 	pmap_swlock(pmap);
 	CPU_INFO_FOREACH(cii, ci) {
-		if (cpuset_isset(&cpus_running, ci) &&
+		if (CPU_IS_RUNNING(ci) &&
 		    pmap->pm_asid[ci->ci_cpuid].pma_asidgen != 0)
 			cpumask |= 1ul << ci->ci_cpuid;
 	}
@@ -299,7 +299,7 @@ pmap_shootdown_range(pmap_t pmap, vaddr_t sva, vaddr_t eva, int needisync)
 	CPU_INFO_FOREACH(cii, ci) {
 		if (ci == self)
 			continue;
-		if (!cpuset_isset(&cpus_running, ci))
+		if (!CPU_IS_RUNNING(ci))
 			continue;
 		if (pmap != pmap_kernel()) {
 			if (pmap->pm_asid[ci->ci_cpuid].pma_asidgen !=
