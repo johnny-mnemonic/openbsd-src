@@ -1,4 +1,5 @@
 .\"	$OpenBSD: onewire.4,v 1.13 2021/08/21 18:28:52 jmc Exp $
+.\"	$OpenBSD: onewire.4,v 1.10 2013/07/16 16:05:49 schwarze Exp $
 .\"
 .\" Copyright (c) 2006 Alexander Yurchenko <grange@openbsd.org>
 .\"
@@ -23,6 +24,8 @@
 .Sh SYNOPSIS
 .Cd "onewire* at gpioow?"
 .Cd "onewire* at uow?"
+.Cd "onewire* at ioc?      " Pq sgi
+.Cd "onewire* at xheart?   " Pq sgi
 .Pp
 .Cd "option ONEWIREVERBOSE"
 .Sh DESCRIPTION

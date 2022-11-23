@@ -20,6 +20,10 @@ GCC4_ARCH=alpha hppa sh sparc64
 GCC3_ARCH=m88k
 LLD_ARCH=aarch64 amd64 arm i386 powerpc powerpc64 riscv64
 
+.if ${MACHINE} == "sgi"
+GCC4_ARCH+=mips64
+.endif
+
 # m88k: ?
 PIE_ARCH=aarch64 alpha amd64 arm hppa i386 mips64 mips64el powerpc powerpc64 riscv64 sh sparc64
 STATICPIE_ARCH=aarch64 alpha amd64 arm hppa i386 mips64 mips64el powerpc powerpc64 riscv64 sh sparc64
