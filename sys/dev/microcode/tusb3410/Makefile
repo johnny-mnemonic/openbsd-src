@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2021/05/01 16:11:16 visa Exp $
+# $OpenBSD: Makefile,v 1.11 2017/01/23 01:00:58 jsg Exp $
 
 NOPROG=
 NOMAN=
@@ -10,7 +10,8 @@ CC=${HOSTCC}
     ${MACHINE} == "arm64" || ${MACHINE} == "armv7" || \
     ${MACHINE} == "hppa" || ${MACHINE} == "i386" || \
     ${MACHINE} == "landisk" || ${MACHINE} == "loongson" || \
-    ${MACHINE} == "octeon" || ${MACHINE} == "sparc64")
+    ${MACHINE} == "octeon" || ${MACHINE} == "sgi" || \
+    ${MACHINE} == "sparc64")
 
 FIRM= 	tusb3410
 
