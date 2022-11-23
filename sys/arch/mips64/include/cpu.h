@@ -1,5 +1,6 @@
 /*	$OpenBSD: cpu.h,v 1.136 2021/07/24 08:21:13 visa Exp $	*/
 /*	$OpenBSD: cpu.h,v 1.130 2020/07/11 15:18:08 visa Exp $	*/
+/*	$OpenBSD: cpu.h,v 1.131 2021/05/01 16:11:10 visa Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993
@@ -428,6 +429,7 @@ void	tlb_flush(int);
 void	tlb_flush_addr(vaddr_t);
 void	tlb_init(unsigned int);
 int64_t	tlb_probe(vaddr_t);
+void	tlb_set_gbase(vaddr_t, vsize_t);
 void	tlb_set_page_mask(uint32_t);
 void	tlb_set_pid(u_int);
 void	tlb_set_wired(uint32_t);
