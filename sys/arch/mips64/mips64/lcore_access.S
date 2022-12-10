@@ -1,4 +1,4 @@
-/*	$OpenBSD: lcore_access.S,v 1.32 2022/01/28 16:20:09 visa Exp $ */
+/*	$OpenBSD: lcore_access.S,v 1.31 2021/05/01 16:11:11 visa Exp $ */
 
 /*
  * Copyright (c) 2001-2003 Opsycon AB  (www.opsycon.se / www.opsycon.com)
@@ -64,6 +64,7 @@ onfault_table:
 #else
 	PTR_VAL	0
 #endif
+	PTR_VAL	_guarderr
 	.text
 
 /*
