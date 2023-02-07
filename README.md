@@ -6,11 +6,11 @@ Planned since a while - actually since [OpenBSD](https://www.openbsd.org/) retir
 
 For a start the releases usually only provide the kernels because those can be used with OpenBSD/octeon file systems, too. But for OpenBSD/sgi 7.0 I manaed to also build the usual release files, see the release page for details.
 
-* https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.70.sgi
+* [OpenBSD/sgi 7.0](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.70.sgi)
 
-* https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.71.sgi
+* [OpenBSD/sgi 7.1](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.71.sgi)
 
-* https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.72.sgi
+* [OpenBSD/sgi 7.2](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.72.sgi)
 
 ## Branches ##
 
@@ -18,16 +18,16 @@ For a start the releases usually only provide the kernels because those can be u
 
 For each OpenBSD release I start with the release commit and apply the list of sgi related commits of the last release on top and then try to build each kernel and make adaptations based on changes made in OpenBSD between the last and the current release until the kernel builds work through. Then follows the testing of the kernels on real hardware which sometimes uncovers missing but needed changes I need to find and adapt for the sgi platform, too.
 
-* https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.0
+* [sgi-is-alive-at-7.0](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.0)
 
-* https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.1
+* [sgi-is-alive-at-7.1](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.1)
 
-* https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.2
+* [sgi-is-alive-at-7.2](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.2)
 
 ### Special branch ###
 
-* https://github.com/the-machine-hall/openbsd-src/tree/sgi-never-retired
+* [sgi-never-retired](https://github.com/the-machine-hall/openbsd-src/tree/sgi-never-retired)
 
-This branch is special in that it "pretends" that the sgi platform was never retired, by skipping the commits that removed sgi related code, cherry-picking the remaining commits and adapting specific commits that - now that the sgi related code is still there - also need to be applied for the sgi platform. The relevant commits for skipping and adapting are identified in the release branches. Instead of the other branches this branch can be used for bisecting (e.g. it was used successfully to find the reason for #1).
+This branch is special in that it "pretends" that the sgi platform was never retired, by skipping the commits that removed sgi related code, cherry-picking the remaining commits and adapting specific commits that - now that the sgi related code is still there - also need to be applied for the sgi platform. The relevant commits for skipping and adapting are identified in the release branches. Instead of the other branches this branch can be used for bisecting (e.g. it was used successfully to find the reason for [#1](https://github.com/the-machine-hall/openbsd-src/issues/1)).
 
 For each cherry-picked commit the commit message also logs the commit hash of the original commit in [the OpenBSD master branch](https://github.com/openbsd/src/tree/master/) providing a relation between both branches.
