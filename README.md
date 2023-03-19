@@ -24,6 +24,8 @@ For each OpenBSD release I start with the release commit and apply the list of s
 
 * [sgi-is-alive-at-7.2](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.2)
 
+* [sgi-is-alive-at-7.3](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.3)
+
 ### Special branch ###
 
 * [sgi-never-retired](https://github.com/the-machine-hall/openbsd-src/tree/sgi-never-retired)
