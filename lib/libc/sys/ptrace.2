@@ -454,7 +454,7 @@ one instruction
 .Pq single-step .
 .\" mips64 (fp registers in the main reg structure)
 .It Xo Dv PT_GETFPREGS
-.No (not available on luna88k or mips64)
+.No (not available on luna88k or sgi)
 .Xc
 This request reads the traced process' floating-point registers into
 the
@@ -464,7 +464,7 @@ the
 pointed to by
 .Fa addr .
 .It Xo Dv PT_SETFPREGS
-.No (not available on luna88k or mips64)
+.No (not available on luna88k or sgi)
 .Xc
 This request is the converse of
 .Dv PT_GETFPREGS ;
