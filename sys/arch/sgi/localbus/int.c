@@ -255,6 +255,10 @@ int2_splx(int newipl)
 	int2_write(INT2_LOCAL0_MASK, int2_intem & ~int2_l0imask[newipl]);
 	setsr(sr);
 
+	/* Trigger deferred clock interrupt if it is now unmasked. */
+	if (ci->ci_clock_deferred && newipl < IPL_CLOCK)
+		md_triggerclock();
+
 	if (ci->ci_softpending != 0 && newipl < IPL_SOFTINT)
 		setsoftintr0();
 }
