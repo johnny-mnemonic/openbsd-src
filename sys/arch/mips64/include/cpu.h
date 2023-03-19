@@ -197,6 +197,11 @@ struct cpu_info {
 	struct clockintr_queue
 			ci_queue;
 
+#ifdef TGT_ORIGIN
+	u_int16_t	ci_nasid;
+	u_int16_t	ci_slice;
+#endif
+
 	struct pmap	*ci_curpmap;
 	uint		ci_intrdepth;		/* interrupt depth */
 #ifdef MULTIPROCESSOR
