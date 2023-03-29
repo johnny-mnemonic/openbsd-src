@@ -520,15 +520,16 @@ uint32_t
 int_8254_intr0(uint32_t hwpend, struct trapframe *tf)
 {
 	struct cpu_info *ci = curcpu();
+	u_int32_t pendingticks = 0;
 
 	int2_write(INT2_TIMER_CLEAR, 0x01);
-	ci->ci_pendingticks++;
+	pendingticks++;
 	if (ci->ci_clock_started != 0) {
 		if (tf->ipl < IPL_CLOCK) {
-			while (ci->ci_pendingticks) {
+			while (pendingticks) {
 				int_clock_count.ec_count++;
 				hardclock(tf);
-				ci->ci_pendingticks--;
+				pendingticks--;
 			}
 		}
 	}
