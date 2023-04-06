@@ -12,6 +12,8 @@ For a start the releases usually only provide the kernels because those can be u
 
 * [OpenBSD/sgi 7.2](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.72.sgi)
 
+* [OpenBSD/sgi 7.3](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.73.sgi)
+
 ## Branches ##
 
 ### Release branches ###
