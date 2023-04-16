@@ -30,8 +30,12 @@ For each OpenBSD release I start with the release commit and apply the list of s
 
 ### Special branch ###
 
-* [sgi-never-retired](https://github.com/the-machine-hall/openbsd-src/tree/sgi-never-retired)
+* [sgi-never-retired-2](https://github.com/the-machine-hall/openbsd-src/tree/sgi-never-retired-2)
 
 This branch is special in that it "pretends" that the sgi platform was never retired, by skipping the commits that removed sgi related code, cherry-picking the remaining commits and adapting specific commits that - now that the sgi related code is still there - also need to be applied for the sgi platform. The relevant commits for skipping and adapting are identified in the release branches. Instead of the other branches this branch can be used for bisecting (e.g. it was used successfully to find the reason for [#1](https://github.com/the-machine-hall/openbsd-src/issues/1)).
 
 For each cherry-picked commit the commit message also logs the commit hash of the original commit in [the OpenBSD master branch](https://github.com/openbsd/src/tree/master/) providing a relation between both branches.
+
+Whenever I need to rewrite the history of an already published sgi-never-retired branch, I create a new one and increment the number at the end.
+
+* [sgi-never-retired](https://github.com/the-machine-hall/openbsd-src/tree/sgi-never-retired) (deprecated)
