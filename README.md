@@ -4,7 +4,7 @@ Planned since a while - actually since [OpenBSD](https://www.openbsd.org/) retir
 
 ## Releases ##
 
-For a start the releases usually only provide the kernels because those can be used with OpenBSD/octeon file systems, too. But for OpenBSD/sgi 7.0 I manaed to also build the usual release files, see the release page for details.
+For a start the releases usually only provide the kernels because those can be used with OpenBSD/octeon file systems, too. But for OpenBSD/sgi 7.0 and 7.1 I managed to also build the usual release files, see the respective release pages for details.
 
 * [OpenBSD/sgi 7.0](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.70.sgi)
 
