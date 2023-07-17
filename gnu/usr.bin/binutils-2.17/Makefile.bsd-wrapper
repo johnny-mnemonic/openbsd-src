@@ -39,6 +39,9 @@ INST_SUBDIRS+=	 ld gas
 MAN+=		gas/doc/as.1	ld/ld.bfd.1
 .endif
 
+## try to set it here explicitly
+AR_VERSION=binutils
+
 .if ${AR_VERSION:L} == "binutils"
 MAN+=		binutils/doc/ar.1 binutils/doc/ranlib.1
 .else
