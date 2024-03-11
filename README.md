@@ -16,6 +16,8 @@ For a start the releases usually only provide the kernels because those can be u
 
 * [OpenBSD/sgi 7.4](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.74.sgi)
 
+* [OpenBSD/sgi 7.5](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.75.sgi)
+
 ## Branches ##
 
 ### Kernel branches ###
@@ -31,6 +33,8 @@ For each OpenBSD release I start with the release commit and apply the list of s
 * [sgi-is-alive-at-7.3](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.3)
 
 * [sgi-is-alive-at-7.4](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.4)
+
+* [sgi-is-alive-at-7.5](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.5)
 
 ### Release branches ###
 
