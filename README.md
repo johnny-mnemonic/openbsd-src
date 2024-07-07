@@ -4,7 +4,7 @@ Planned since a while - actually since [OpenBSD](https://www.openbsd.org/) retir
 
 ## Releases ##
 
-For a start the releases usually only provide the kernels because those can be used with OpenBSD/octeon file systems, too. But for OpenBSD/sgi 7.0, 7.1 and 7.2 I managed to also build the usual release files, see the respective release pages for details.
+For a start the releases usually only provide the kernels because those can be used with OpenBSD/octeon file systems, too. But for OpenBSD/sgi 7.0 to 7.3 I managed to also build the usual release files (with some exceptions), see the respective release pages for details.
 
 * [OpenBSD/sgi 7.0](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.70.sgi)
 
@@ -43,6 +43,8 @@ The release branches since 7.1 are forked from the current sgi-never-retired-* b
 * [sgi-release-7.1](https://github.com/the-machine-hall/openbsd-src/tree/sgi-release-7.1)
 
 * [sgi-release-7.2](https://github.com/the-machine-hall/openbsd-src/tree/sgi-release-7.2)
+
+* [sgi-release-7.3](https://github.com/the-machine-hall/openbsd-src/tree/sgi-release-7.3)
 
 ### Special branch ###
 
