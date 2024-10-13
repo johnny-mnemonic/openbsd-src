@@ -4,7 +4,7 @@ Planned since a while - actually since [OpenBSD](https://www.openbsd.org/) retir
 
 ## Releases ##
 
-For a start the releases usually only provide the kernels because those can be used with OpenBSD/octeon file systems, too. But for OpenBSD/sgi 7.0 to 7.3 I managed to also build the usual release files (with some exceptions), see the respective release pages for details.
+For a start the releases usually only provide the kernels because those can be used with [OpenBSD/octeon](https://www.openbsd.org/octeon.html) file systems, too. But for OpenBSD/sgi 7.0 to 7.3 I managed to also build the usual release files (with some exceptions), see the respective release pages for details.
 
 * [OpenBSD/sgi 7.0](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.70.sgi)
 
@@ -17,6 +17,8 @@ For a start the releases usually only provide the kernels because those can be u
 * [OpenBSD/sgi 7.4](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.74.sgi)
 
 * [OpenBSD/sgi 7.5](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.75.sgi)
+
+* [OpenBSD/sgi 7.6](https://github.com/the-machine-hall/openbsd-src/releases/tag/openbsd.76.sgi)
 
 ## Branches ##
 
@@ -35,6 +37,8 @@ For each OpenBSD release I start with the release commit and apply the list of s
 * [sgi-is-alive-at-7.4](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.4)
 
 * [sgi-is-alive-at-7.5](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.5)
+
+* [sgi-is-alive-at-7.6](https://github.com/the-machine-hall/openbsd-src/tree/sgi-is-alive-at-7.6)
 
 ### Release branches ###
 
